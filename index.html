@@ -20,35 +20,78 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <main class="p-4">
-      <section>
-        <form novalidate class="space-y-6">
-          <div for="email">
-            <div>
-              <label for="email">Email address</label>
-              <small id="email-message" class="text-red-400"
-                ></small
-              >
-            </div>
-            <div id="emailDiv" class="bg-white rounded-lg border border-black-300">
-              <input
-                id="email"
-                name="email"
-                class="py-2 px-3 placeholder:text-gray-700 text-gray-900 border-none bg-transparent focus:outline-none focus:ring-0 w-full"
-                placeholder="email@company.com"
-                type="email"
-              />
-            </div>
-          </div>
+  <body class="bg-[#36384e]">
+    <main class="flex items-center justify-center min-h-screen">
+      <div class="bg-white lg:flex flex-row-reverse lg:rounded-xl">
 
-          <div>
-            <button class="bg-[#242742] text-white p-2 text-center">
-              Subscribe to monthly newsletter
-            </button>
-          </div>
-        </form>
-      </section>
+        <div class="lg:w-[375px] lg:p-4 lg:h">
+          <img
+            class="size-full object-cover rounded-b-md md:hidden"
+            src="assets/images/illustration-sign-up-mobile.svg"
+            alt=""
+          />
+          <img
+            class="size-full object-cover rounded-b-md hidden md:block lg:hidden"
+            src="assets/images/illustration-sign-up-tablet.svg"
+            alt=""
+          />
+          <img
+            class="size-full object-cover rounded-xl hidden lg:block"
+            src="assets/images/illustration-sign-up-desktop.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="py-10 px-5 text-[#36384e] lg:w-[375px]">
+          <section>
+            <h1 class=" text-2xl font-bold">Stay updated</h1>
+            <p class="mt-5">Join 60,000+ product managers receiving monthly updates on:</p>
+
+            <div class="space-y-4 mt-6">
+              <div class="flex">
+                <img src="assets/images/icon-list.svg" alt="">
+                <p class="ml-3">Product discovery and building what </p>
+              </div>
+              <div class="flex">
+                <img src="assets/images/icon-list.svg" alt="">
+                <p class="ml-3">Product discovery and building what </p>
+              </div>
+              <div class="flex">
+                <img src="assets/images/icon-list.svg" alt="">
+                <p class="ml-3">Product discovery and building what </p>
+              </div>
+            </div>
+          </section>
+          <section class="mt-6">
+            <form novalidate class="space-y-6">
+              <div for="email">
+                <div class="flex justify-between">
+                  <label class="text-[#36384e] text-sm" for="email">Email address</label>
+                  <small id="email-message" class="text-red-400"></small>
+                </div>
+                <div
+                  id="emailDiv"
+                  class="bg-white rounded-lg border border-black-300 mt-2"
+                >
+                  <input
+                    id="email"
+                    name="email"
+                    class="py-2 px-3 placeholder:text-gray-700 text-gray-900 border-none bg-transparent focus:outline-none focus:ring-0 w-full"
+                    placeholder="email@company.com"
+                    type="email"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <button class="bg-[#242742] text-white p-2 text-center w-full text-bold rounded-lg">
+                  Subscribe to monthly newsletter
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
     </main>
   </body>
 </html>
