@@ -14,7 +14,7 @@ The designs were created to the following widths:
 ### Primary
 
 - Red: #ff6257
-
+- Red: #b8372e
 ### Neutral
 
 - Blue 800: #242742

@@ -20,7 +20,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#36384e]">
+  <body class="bg-[#36384e] relative">
     <main class="flex items-center justify-center min-h-screen">
       <div class="bg-white lg:flex flex-row-reverse lg:rounded-xl">
 
@@ -44,21 +44,23 @@
 
         <div class="py-10 px-5 text-[#36384e] lg:w-[375px]">
           <section>
-            <h1 class=" text-2xl font-bold">Stay updated</h1>
-            <p class="mt-5">Join 60,000+ product managers receiving monthly updates on:</p>
+            <h1 class="text-2xl font-bold">Stay updated</h1>
+            <p class="mt-5">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
 
             <div class="space-y-4 mt-6">
               <div class="flex">
-                <img src="assets/images/icon-list.svg" alt="">
-                <p class="ml-3">Product discovery and building what </p>
+                <img src="assets/images/icon-list.svg" alt="" />
+                <p class="ml-3">Product discovery and building what</p>
               </div>
               <div class="flex">
-                <img src="assets/images/icon-list.svg" alt="">
-                <p class="ml-3">Product discovery and building what </p>
+                <img src="assets/images/icon-list.svg" alt="" />
+                <p class="ml-3">Product discovery and building what</p>
               </div>
               <div class="flex">
-                <img src="assets/images/icon-list.svg" alt="">
-                <p class="ml-3">Product discovery and building what </p>
+                <img src="assets/images/icon-list.svg" alt="" />
+                <p class="ml-3">Product discovery and building what</p>
               </div>
             </div>
           </section>
@@ -66,7 +68,9 @@
             <form novalidate class="space-y-6">
               <div for="email">
                 <div class="flex justify-between">
-                  <label class="text-[#36384e] text-sm" for="email">Email address</label>
+                  <label class="text-[#36384e] text-sm" for="email"
+                    >Email address</label
+                  >
                   <small id="email-message" class="text-red-400"></small>
                 </div>
                 <div
@@ -84,7 +88,9 @@
               </div>
 
               <div>
-                <button class="bg-[#242742] text-white p-2 text-center w-full text-bold rounded-lg">
+                <button
+                  class="bg-[#242742] text-white p-2 text-center w-full text-bold rounded-lg shadow-lg hover:bg-gradient-to-r hover:from-[#ff6257] hover:to-[#b8372e] hover:shadow-[#ff6257]"
+                >
                   Subscribe to monthly newsletter
                 </button>
               </div>
@@ -93,5 +99,31 @@
         </div>
       </div>
     </main>
+
+    <div
+      id="ModalDiv"
+      class="absolute inset-0 bg-[#36384e] sm:items-center sm:justify-center hidden"
+    >
+      <div
+        class="bg-white pt-[30%] sm:pt-8 p-8 shadow-xl sm:w-[375px] sm:rounded-xl h-screen sm:h-fit flex flex-col"
+      >
+        <div>
+          <img src="assets/images/icon-success.svg" alt="" />
+          <h2 class="my-4 text-3xl font-semibold text-[#242742]">
+            Thanks for subscribing!
+          </h2>
+          <small class="text-[#242742]"
+            >A confirmation email has been sent to <span class="addEmail font-bold"></span>. Please open it
+            and click the button inside to confirm your subscription
+          </small>
+        </div>
+        <button
+          id="closeModel"
+          class="block bg-[#242742] text-white font-bold py-2 rounded-lg w-full mt-auto sm:mt-6 justify-self-end"
+        >
+          Dismiss message
+        </button>
+      </div>
+    </div>
   </body>
 </html>
